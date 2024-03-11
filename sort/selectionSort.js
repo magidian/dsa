@@ -8,7 +8,7 @@ function selectionSort(arr) {
         currentMin = arr[j];
         // swap arr[i] with min
         let temp = arr[i];
-        arr[i] = currentMin;
+        arr[i] = arr[j];
         arr[j] = temp;
       }
     }
@@ -16,5 +16,5 @@ function selectionSort(arr) {
   return arr;
 }
 
-let arr = [3, 5, 4, 1, 2];
+let arr = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
 console.log(selectionSort(arr));
