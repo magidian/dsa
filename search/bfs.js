@@ -11,8 +11,8 @@ const graph = {
 };
 
 function bfs(graph, start) {
-  let visited = new Set();
   let queue = [start];
+  let visited = new Set();
   const result = [];
 
   visited.add(start);
